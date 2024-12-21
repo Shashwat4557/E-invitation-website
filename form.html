@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pulse Innovative - Query Form</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="main3.css" />
+    <script src="https://kit.fontawesome.com/c057664144.js" crossorigin="anonymous" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&family=Marck+Script&display=swap" rel="stylesheet" />
+    <link rel="icon" href="logo.png" />
+  </head>
+
+  <body>
+    <header>
+      <div class="second-header">
+        <a href="index.html" class="logo">
+          <img src="logo.jpg" alt="Pulse Logo" />
+          <div>
+            <span class="logo-first">Pulse</span>
+            <span class="logo-last">Innovative</span>
+            <br />
+            <span class="logo-last">Creation</span>
+          </div>
+        </a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="form-container">
+        <h2>Customer Inquiry Form</h2>
+        <form action="https://formspree.io/f/mgvvwadj" method="POST" class="form-content">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your full name" required />
+
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required />
+
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required />
+
+          <label for="query">Your Query</label>
+          <textarea id="query" name="query" placeholder="Describe your query" required></textarea>
+
+          <label for="address">Address</label>
+          <textarea id="address" name="address" placeholder="Enter your address" required></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

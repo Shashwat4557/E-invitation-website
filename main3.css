@@ -1,0 +1,168 @@
+/* General Styling */
+body {
+    font-family: "Baloo 2", cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    box-sizing: border-box;
+  }
+  
+  header {
+    background-color: #000000;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .second-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+  }
+  
+  /* Logo Styling */
+  .logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .logo img {
+    width: 50px;
+    margin-right: 10px;
+  }
+  
+  .logo-first, .logo-last {
+    font-family: 'Brush Script MT', cursive; /* You can replace this with a different cursive font if needed */
+    font-size: 30px;
+    color: #fff;
+  }
+  
+  .logo-last {
+    font-size: 24px; /* Adjust if needed */
+  }
+  
+  /* Navigation Styling */
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  
+  /* Change color to brown on hover */
+  nav ul li a:hover {
+    color: #b66f2d; /* Brown color on hover */
+    text-decoration: none; /* No underline on hover */
+  }
+  
+  /* Remove underline and ensure color change to brown when active */
+  nav ul li a.active {
+    color: #b66f2d; /* Brown color for active links */
+    background-color: transparent; /* No background color */
+  }
+  
+  /* Form Styling */
+  .form-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .form-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #b66f2d;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  
+  .form-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form-content label {
+    font-size: 1rem;
+    color: #555;
+    font-weight: bold;
+  }
+  
+  .form-content input,
+  .form-content textarea {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  .form-content textarea {
+    resize: none;
+    min-height: 100px;
+  }
+  
+  .form-content input:focus,
+  .form-content textarea:focus {
+    border-color: #b66f2d;
+    box-shadow: 0 0 8px rgba(182, 111, 45, 0.5);
+  }
+  
+  .form-content button {
+    background-color: #000000;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .form-content button:hover {
+    background-color: #944f1c;
+    box-shadow: 0 4px 10px rgba(148, 79, 28, 0.3);
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .form-container {
+      padding: 20px;
+      margin: 20px;
+    }
+  
+    .second-header {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .second-header nav ul {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .second-header nav ul li {
+      margin: 5px 0;
+    }
+  }
