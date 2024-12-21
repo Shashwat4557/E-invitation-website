@@ -42,3 +42,25 @@ button {
 button:hover {
     background-color: #2980b9;
 }
+
+a {
+    color: inherit; /* Inherits the text color from the parent element */
+    text-decoration: none; /* Removes underline */
+    font-weight: bold; /* Make the link text bold */
+}
+
+a:hover {
+    color: inherit; /* Optional: keeps the same color on hover */
+    text-decoration: none; /* Optional: removes underline on hover */
+    
+}
+
+.sections-section {
+    font-weight: bold; /* Make everything inside sections-section bold */
+}
+
+/* Optional: to make only the icon + text bold and not the paragraph */
+.sections-section i,
+.sections-section p {
+    font-weight: bold; /* Make both icon text and paragraph text bold */
+}
